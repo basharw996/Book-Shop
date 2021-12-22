@@ -1,0 +1,6 @@
+2021-12-19 15:41:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LIBRARY(ID INT([*]11) NOT NULL AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(255) NOT  NULL, PRICE INT(11) NOT NULL, CATEGORY VARCHAR(255)NOT NULL)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ., )"; SQL statement:
+create table library(id int(11) not null auto_increment primary key, name varchar(255) not  null, price int(11) not null, category varchar(255)not null) [42001-202]
+2021-12-19 15:41:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LIBRARY(ID INT([*]11) AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(255), PRICE INT(11), CATEGORY VARCHAR(255))"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ., )"; SQL statement:
+create table library(id int(11) auto_increment primary key, name varchar(255), price int(11), category varchar(255)) [42001-202]
